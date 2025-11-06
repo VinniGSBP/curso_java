@@ -1,0 +1,42 @@
+package estrutura_repetitiva;
+
+import java.util.Scanner;
+
+public class estrutura_while {
+	public static void main (String[]args) {
+		Scanner sc = new Scanner(System.in);
+//		System.out.println("Digite um numero inteiro: ");
+//		 int x = sc.nextInt();
+//		 int soma = 0;
+//		 while (x != 0) {
+//			 
+//			 soma += x;
+//			 x = sc.nextInt();
+//		 }
+//		 
+//		System.out.println(soma);
+//		System.out.println("Fim");
+//		
+		
+		double x = 100;
+		double y = 100;
+		while ( x != y) {
+			System.out.println("Olha");
+			x = Math.sqrt(y);
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+}

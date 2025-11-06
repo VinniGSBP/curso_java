@@ -1,0 +1,10 @@
+package topicos_Basicos_Java;
+
+public class split {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

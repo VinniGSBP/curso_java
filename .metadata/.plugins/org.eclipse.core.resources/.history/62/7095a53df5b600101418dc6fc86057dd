@@ -1,0 +1,10 @@
+package estrutura_sequencial;
+
+public class variaveis_tipo_basico {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

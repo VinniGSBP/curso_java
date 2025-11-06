@@ -1,0 +1,23 @@
+package estrutura_sequencial;
+import java.util.Scanner;
+public class exercicios_modulo {
+	public static void main(String[] args) {
+		// exercicio 1
+		// Faça um programa para ler dois valores inteiros, e depois mostrar na tela a
+		// soma desses números com uma
+		// mensagem explicativa, conforme exemplos.
+		Scanner sc = new Scanner(System.in);
+		int x, y, z;
+		x = sc.nextInt();
+		y = sc.nextInt();
+		
+		
+		z = x + y;
+		
+		System.out.println(z);
+		
+		
+		
+		sc.close();
+	}
+}

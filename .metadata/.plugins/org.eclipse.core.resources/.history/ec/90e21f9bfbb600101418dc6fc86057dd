@@ -1,0 +1,44 @@
+package estrutura_sequencial;
+import java.util.Locale;
+
+public class saida_de_dados {
+
+	public static void main(String[] args) {
+		//Para escrever na tela um texto qualquer
+		// * Sem quebra de linha ao final:
+		System.out.print("Hello, World !");
+		
+		// *Com quebra de linha ao final:
+		System.out.println("Hello World !");
+		
+		System.out.println("Quebra de linha pos println");
+		
+		// Para escrever o conteudo ded uma variavel de algum tipo basico
+		String nome = "Vinicius";
+		int idade = 30;
+		double altura  = 1.723154123;
+		double renda = 4000.0;
+		System.out.println(idade);
+		System.out.println(altura);
+		
+		//Escrevendo formatado com numero de casas decimais
+		//Sendo %N = quebra de linha (independente de plataforma)
+		
+		System.out.printf("%.2f%n", altura);
+		Locale.setDefault(Locale.US);
+		System.out.printf("%.4f%n", altura);
+	 
+		// Para CONCATENAR varios elementos em um mesmo comando de escrita:
+		// Regra geral para PRINT e PRINTLN
+		System.out.println("Vinicius tem " +idade+" anos");
+		
+		// Regra geral para PRINT F
+		// Sendo %F - ponto flutuante
+		// %d - inteiro
+		// %s - texto
+		// %n - quebra de linha
+		System.out.printf("Vinicius tem %.2f metros%n", altura);
+		System.out.printf("Vinicius tem %d anos e %f metros e ganha R$ %.2f reais%n",idade, altura, renda);
+	}
+
+}

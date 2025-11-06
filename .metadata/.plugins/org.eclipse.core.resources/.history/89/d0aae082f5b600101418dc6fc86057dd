@@ -1,0 +1,15 @@
+package estrutura_sequencial;
+
+public class saida_de_dados {
+
+	public static void main(String[] args) {
+		//Para escrever na tela um texto qualquer
+		// * Sem quebra de linha ao final:
+		System.out.print("Hello, World !");
+		
+		// *Com quebra de linha ao final:
+		System.out.println("Hello World !");
+		
+	}
+
+}

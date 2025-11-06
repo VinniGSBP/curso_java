@@ -1,0 +1,29 @@
+package estrutura_sequencial;
+import java.util.Scanner;
+import java.util.Locale;
+public class entrada_de_dados {
+
+	public static void main(String[] args) {
+		// Para fazer entrada de dados, nos vamos crair um objeto do tipo "scanner" da seguinte forma:
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);  
+		
+//		String x;
+//		x = sc.next();
+//		int x;
+//		x = sc.nextInt();
+		
+		
+		double x;
+		x = sc.nextDouble();
+		System.out.printf("Voce digitou: %.2f%n", x);
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,115 @@
+package estrutura_condicional;
+import java.util.Scanner;
+import java.util.Locale;
+public class exercicio_modulo {
+ public static void main (String []args) {
+	 Scanner sc = new Scanner (System.in);
+	 
+	 //Exercicio 1
+	 //Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não.
+//	 Scanner sc = new Scanner (System.in);
+//	 
+//	 int x;
+//	 System.out.println("Digite um numero inteiro: ");
+//	 x = sc.nextInt();
+//	 
+//	 if (x < 0) {
+//		 System.out.println("Numero Negativo");
+//	 }
+//	 else {
+//		System.out.println("Numero Positivo");
+//	 }
+//	 
+//	 sc.close();
+//	 
+//	 
+	 //Exercicio 2
+	 //Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao
+//	 Multiplos", indicando se os valores lidos são múltiplos entre si. Atenção: os números devem poder ser digitados em
+//	 ordem crescente ou decrescente.
+
+	 
+//	 int a, b;
+//	 System.out.println("Digite dois numeros inteiros: ");
+//	 a = sc.nextInt();
+//	 b = sc.nextInt();
+//	 
+//	 
+//	 if (a % b == 0 || b % a == 0) {
+//		 System.out.println("Sao Multiplos");
+//	 }
+//	 else {
+//		 System.out.println("Nao sao multiplos");
+//	 }
+	 
+	 
+	 	//Exercicio 3
+	 //Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar.
+	 
+//	 int a;
+//	 
+//	 System.out.println("Digite um numero inteiro: ");
+//	 a = sc.nextInt();
+//	 
+//	 if (a % 2 == 0) {
+//		 System.out.println("Numero par");
+//	 }
+//	 else {
+//		 System.out.println("Numero impar");
+//	 }
+	 
+	 // Exercicio 4
+//	 Com base na tabela abaixo, escreva um programa que leia o código de um item e a quantidade deste item. A
+//	 seguir, calcule e mostre o valor da conta a pagar.
+//	 Tabela:
+	 // codigo 		especificacao 		Preco
+	 // 1 			cachorro quente		4.00
+	 // 2			X-Salada			4.50
+	 // 3			X-Bacon				5.00
+	 // 4			Torrada Simples		2.00
+	 // 5			Refrigerante		1.50
+	 
+	 
+	 int codigo, quantidade;
+	 System.out.println("Digite o codigo do produto: ");
+	 codigo = sc.nextInt();
+	 System.out.println("Digite a quantidade do produto: ");
+	 quantidade = sc.nextInt();
+	 double total;
+	 
+	 if (codigo == 1) {
+		 total = quantidade * 4.0;
+	 }
+	 else if (codigo == 2) {
+		 total = quantidade * 4.50;
+	 }
+	 else if (codigo == 3) {
+		 total = quantidade * 5.00;
+	 }
+	 else if (codigo == 4) {
+		 total = quantidade * 2.00;
+	 }
+	 else if (codigo == 5) {
+		 total = quantidade * 1.50;
+	 }
+	Locale.setDefault(Locale.US);
+	System.out.printf("Total: R$: %.2f%n", total);
+	
+	sc.close();
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+  	}
+}

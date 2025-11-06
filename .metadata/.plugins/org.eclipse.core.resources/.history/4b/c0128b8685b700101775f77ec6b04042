@@ -1,0 +1,12 @@
+package estrutura_sequencial;
+
+public class entrada_de_dados {
+
+	public static void main(String[] args) {
+		// Para fazer entrada de dados, nos vamos crair um objeto do tipo "scanner" da seguinte forma:
+		
+		Scanner sc = new Scanner(System.in);
+
+	}
+
+}

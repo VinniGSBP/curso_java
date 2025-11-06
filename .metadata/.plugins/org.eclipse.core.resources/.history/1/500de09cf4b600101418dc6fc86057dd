@@ -1,0 +1,18 @@
+package estrutura_sequencial;
+
+public class variaveis_tipos_basicos {
+	public static void Main (String[] args) {
+		//exemplos de variaveis
+		
+		int idade = 25;
+		double altura = 1.68;
+		char sexo = 'f';
+		
+		System.out.println(idade);
+		//Nome de variaveis
+		// * Nao pode comecar com digito: use letra ou _ 
+		// * Nao pode ter espaco em branco 
+		// * Nao usar acentous ou til
+		// * Sugestao: usar o padrao "Camel Case"
+	}
+}
