@@ -1,26 +1,38 @@
 package application;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.File;
+import java.util.Scanner;
 
 public class Program {
 
 	public static void main(String[] args) {
-
-		String[] lines = new String[] { " Good Morning", "Good Afternoon", "Good Night" };
-
-		String path = "C:\\Users\\User\\Desktop\\Curso Java";
-
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
-			for (String line : lines) {
-				bw.write(line);
-				bw.newLine();
-			}
-		} 
-		catch (IOException e) {
-			e.printStackTrace();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite uma pasta: ");
+		String strpath = sc.nextLine();
+		
+		File path = new File(strpath);
+		
+		File[]folders = path.listFiles(File::isDirectory);
+		
+		System.out.println("Folders: ");
+		for (File folder : folders) {
+			System.out.println(folder);
 		}
-
+		
+		
+		File[] files = path.listFiles(File:: isFile);
+		System.out.println("FILES: ");
+		for (File file : files) {
+			System.out.println(file);
+		}
+		
+		
+		boolean sucess = new File(strpath + "\\subdir").mkdir();
+		
+		System.out.println("Sucess " + sucess);
+		
+		sc.close();
+	
 	}
 }
