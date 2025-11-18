@@ -5,7 +5,7 @@ import entities.Client;
 public class Program {
 
 	public static void main(String[] args) {
-		// Testando EQUALS e HashCode
+		// Testando EQUALS e HashCode exemplo 2
 		Client c1 = new Client("Maria", "maria@gmail.com");
 		Client c2 = new Client("Maria", "maria@gmail.com");
 		
