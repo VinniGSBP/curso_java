@@ -22,7 +22,7 @@ public class Program {
 		//list.forEach(Product::nonStaticPriceUpdate); Reference method com método não estático
 		
 		// Consumer<Product> cons = p -> p.setPrice(p.getPrice() * 1.1); Expressao lambda declarada
-		list.forEach(cons);
+		list.forEach(p -> p.setPrice(p.getPrice() * 1.1)); // Expressao lambda in line
 		list.forEach(System.out::println);
 	}
 
