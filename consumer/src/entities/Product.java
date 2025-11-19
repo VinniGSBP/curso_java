@@ -26,5 +26,9 @@ public class Product {
 		return name + ", " +String.format("%.2f", price);
 	}
 	
+	public static void staticPriceUpdate(Product p) {
+		p.setPrice(p.getPrice() * 1.1);
+	}
+	
 	
 }
