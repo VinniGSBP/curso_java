@@ -18,7 +18,8 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 		
 		//list.forEach(new PriceUpdate()); Implementação da interface
-		list.forEach(Product::staticPriceUpdate);
+		//list.forEach(Product::staticPriceUpdate); Reference method com método estático
+		//list.forEach(Product::nonStaticPriceUpdate); Reference method com método não estático
 		list.forEach(System.out::println);
 	}
 
