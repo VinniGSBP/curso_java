@@ -19,7 +19,9 @@ public class Program {
 		
 		//list.removeIf(p -> p.getPrice() >= 100.00); Predicado em forma de expressao lambda
 		
-		list.removeIf(new ProductPredicate());
+		//list.removeIf(new ProductPredicate()); // Predicado criado.
+		
+		list.removeIf(Product::staticProductPredicate); //Reference method com método estático
 		for (Product p : list)
 		System.out.println(p);
 	}
