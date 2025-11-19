@@ -25,9 +25,12 @@ public class Program {
 		
 		//list.removeIf(Product::nonStaticProductPredicate); //Reference method com método não estático
 		
-		Predicate<Product> pred = p -> p.getPrice() >= 100.0; //Expressão lambda declarada
+		//Predicate<Product> pred = p -> p.getPrice() >= 100.0; //Expressão lambda declarada
 		
-		list.removeIf(pred); //Expressão lambda declarada
+		//list.removeIf(pred); //Expressão lambda declarada
+		
+		list.removeIf(p -> p.getPrice() >= 100.0); //Expressão lambda inline
+		
 		
 		for (Product p : list)
 		System.out.println(p);
